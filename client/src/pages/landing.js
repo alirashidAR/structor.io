@@ -4,6 +4,8 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import LogoSVG from '../images/432.svg'
 import Navbar from './navbar'
 import { TypeAnimation } from 'react-type-animation'
+import Features from './Features'
+import Newsletter from './NewsLetter'
 
 const navigation = [
   { name: 'Projects', href: '#' },
@@ -27,7 +29,7 @@ export default function ProjectPage() {
             <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
               Share and Collaborate on Projects
             </h1>
-            <div className='mt-20'>
+            <div className='mt-20 w-full'>
             <TypeAnimation
                   sequence={[
                     'Welcome to our project collaboration platform!',
@@ -45,20 +47,11 @@ export default function ProjectPage() {
                   repeat={Infinity}
                 />
             </div>
-            <div className="mt-10 flex items-center justify-center gap-x-6">
-              <a
-                href="#"
-                className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-              >
-                Get started
-              </a>
-              <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-                Learn more <span aria-hidden="true">→</span>
-              </a>
-            </div>
           </div>
         </div>
       </div>
+      <Features />
+      <Newsletter/>
     </div>
   )
 }
